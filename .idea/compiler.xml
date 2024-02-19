@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mts-homework-RVSavchenkov" />
         <module name="lecture-two" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mts-homework-RVSavchenkov" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

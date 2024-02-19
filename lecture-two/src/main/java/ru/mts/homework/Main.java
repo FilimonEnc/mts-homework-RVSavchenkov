@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         out.println("Hello world");
         out.println("Я люблю МТС");
+        out.println("Java");
 
     }
 }
