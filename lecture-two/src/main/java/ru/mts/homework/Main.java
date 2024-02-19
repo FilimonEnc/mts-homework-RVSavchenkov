@@ -7,6 +7,5 @@ public class Main {
         out.println("Hello world");
         out.println("Я люблю МТС");
         out.println("Java");
-
     }
 }
