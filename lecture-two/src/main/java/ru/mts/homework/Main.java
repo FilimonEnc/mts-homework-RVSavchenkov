@@ -1,11 +1,13 @@
 package ru.mts.homework;
 
-import static java.lang.System.*;
+import ru.mts.homework.repositories.CreateAnimalService;
+import ru.mts.homework.services.impl.CreateAnimalServiceImpl;
 
 public class Main {
     public static void main(String[] args) {
-        out.println("Hello world");
-        out.println("Я люблю МТС");
-        out.println("Java");
+        CreateAnimalServiceImpl animalService = new CreateAnimalServiceImpl();
+        animalService.CreateAnimals();
+        animalService.CreateAnimals(10);
+        animalService.CreateAnimalsDefault();
     }
 }
