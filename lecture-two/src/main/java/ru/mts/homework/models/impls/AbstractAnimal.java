@@ -4,10 +4,10 @@ import ru.mts.homework.repositories.Animal;
 
 public class AbstractAnimal implements Animal {
 
-    protected String breed = ""; // порода
-    protected String name = ""; // имя
-    protected Double cost = 0.0; // цена в магазине
-    protected String character = ""; // характер
+    protected String breed; // порода
+    protected String name; // имя
+    protected Double cost; // цена в магазине
+    protected String character; // характер
 
     @Override
     public String getBreed() {

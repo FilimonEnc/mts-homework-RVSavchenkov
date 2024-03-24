@@ -8,32 +8,34 @@ import java.util.ArrayList;
 
 public class CreateAnimalServiceImpl implements CreateAnimalService {
 
-    public void CreateAnimals(int N) {
+
+    public void createAnimals(int N) {
         if (N < 1)
             return;
 
-        ArrayList<Animal> animals = new ArrayList<Animal>();
+        ArrayList<Animal> animals = new ArrayList<>();
 
         for (int i = 0; i < N; i++) {
             animals.add(new Dog());
-            System.out.println("Животное создано (for)");
+            System.out.println("Животное создано (for)" + animals.size());
         }
     }
 
     @Override
-    public void CreateAnimals() {
+    public void createAnimals() {
         int i = 0;
 
-        ArrayList<Animal> animals = new ArrayList<Animal>();
+        ArrayList<Animal> animals = new ArrayList<>();
         do {
             animals.add(new Dog());
-            System.out.println("Животное создано (do While)");
+            System.out.println("Животное создано (do While)" + animals.size());
             i++;
         } while (i < 10);
     }
 
-    public void CreateAnimalsDefault() {
-        CreateAnimalService.super.CreateAnimals();
+    public void createAnimalsDefault() {
+        CreateAnimalService.super.createAnimals();
     }
+
 }
 
